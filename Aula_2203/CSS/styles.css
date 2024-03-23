@@ -1,0 +1,32 @@
+body {
+background-color: rgb(255, 255, 255);
+font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+   color: #ff0000;
+   font-size: 45px;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+p{
+color: #000000;
+}
+
+figure{
+text-align: center;
+}
+
+img{
+    width: 350px;
+    height: 270px;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+img:hover{
+    transform: scale(.9);
+}
