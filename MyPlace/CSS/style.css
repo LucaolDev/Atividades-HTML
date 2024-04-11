@@ -16,11 +16,15 @@ url(../images/pexels-felix-mittermeier-957002.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+display: flex;
+flex-direction: column;
+gap: 3.5rem;
 }
 
-.container h1 {
+.container header {
     color: var(--color-light); 
-    font-size: 35px;  
+    font-size: 22px;  
+    width: 100%;
 }
 .container h2 {
     color: var(--color-light);
@@ -34,9 +38,11 @@ background-position: center;
 }
 .container a {
 color: var(--color-light);
-text-decoration: double;
-text-align: center;
 background-color: var(--color-pink); 
-border-radius: 8px;
+text-decoration: none;
+border-radius: 16px;
 font-size: 20px;
+padding: 12px;
+text-align: center;
+margin: 41%;
 }   
