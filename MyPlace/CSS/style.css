@@ -19,6 +19,8 @@ background-position: center;
 display: flex;
 flex-direction: column;
 gap: 3.5rem;
+margin: 0 auto;
+align-items: center;
 }
 
 .container header {
@@ -40,9 +42,8 @@ gap: 3.5rem;
 color: var(--color-light);
 background-color: var(--color-pink); 
 text-decoration: none;
-border-radius: 16px;
-font-size: 20px;
-padding: 12px;
+border-radius: 30px;
+font-size: 18px;
+padding: 15px;
 text-align: center;
-margin: 41%;
 }   
