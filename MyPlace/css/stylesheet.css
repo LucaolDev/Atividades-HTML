@@ -1,0 +1,78 @@
+:root{
+    --color-ligth: #ffffff;
+    --color-dark: #000000;
+    --color-pink: #dc143d;
+    --font-body: font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;                  
+    background-image: linear-gradient(to bottom, rgba(0,0,0, .8), rgba(0,0,0, .3)),
+    url(../imagens/pexels-felix-mittermeier-957002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container h1{
+    color: var(--color-ligth);
+}
+
+.header-page{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 20px;
+}
+
+.header-menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    color:var(--color-ligth);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+a:hover {
+    color: var(--color-pink)
+}
+
+
+/*
+vh = Viewport Height (permite que os elementos da pagina sejam dimensionados de acordo com o tamanho da tela)
+
+rgba (red, green, blue, alfa-opacity)
+
+alfa-opacity = destinado a definir a opacidade em uma faixa de valores decimais de 0 até 1
+
+linear-gradiente = é uma transição entre duas ou mais cores
+
+to botoom (para baixo) = direção do gradiente
+
+root = criar variáveis
+
+background-repeat: no-repeat = para quando tirar o zoom não aparecer imagens repetidas
+
+background-size: cover (cobrir) = informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o contêiner inteiro
+
+background-position: 50% (meio) define a posição inicial de uma imagem de fundo
+
+*/
