@@ -2,12 +2,11 @@
     --color-ligth: #ffffff;
     --color-dark: #000000;
     --color-pink: #dc143d;
-    --font-body: font-family: "Poppins", sans-serif;
+    --font-body:"Poppins", sans-serif;
 }
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: var(--font-body);
 }
@@ -24,15 +23,16 @@
 
 .container h1{
     color: var(--color-ligth);
+    font-size: 55px;
 }
 
 .header-page{
     width: 100%;
-    height: 130px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 0 20px;
+    padding: 0px 30px;
 }
 
 .header-menu ul{
@@ -44,16 +44,59 @@ ul,li{
     list-style: none;
 }
 
-a{
+h2 {
+    color: var(--color-ligth);
+    font-weight: 600;
+    font-size: 72px;
+}
+
+h3 {
+    color: var(--color-ligth);
+    font-weight: 600;
+    font-size: 45px;
+
+
+}
+
+ul a{
     color:var(--color-ligth);
+    font-size: 20px;
     text-decoration: none;
     font-weight: 600;
     transition: color .5s;
 }
 
-a:hover {
+ul a:hover {
     color: var(--color-pink)
 }
+
+section a {
+    color: var(--color-ligth);
+    background-color: var(--color-pink);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 40px;
+    padding : 20px 45px
+}
+
+section a:hover {
+    color: var(--color-pink);
+    background-color: var(--color-ligth);
+    transition: color 1s;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 215px;
+}
+
+
+
 
 
 /*
