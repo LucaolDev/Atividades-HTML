@@ -21,6 +21,13 @@
     background-position: 50%;
 }
 
+.header-info {
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
 .container h1{
     color: var(--color-ligth);
     font-size: 55px;
@@ -77,14 +84,13 @@ section a {
     font-weight: 600;
     font-size: 25px;
     border-radius: 40px;
-    padding : 20px 45px
+    padding : 20px 45px;
+    transition: color .5s; 
 }
 
 section a:hover {
     color: var(--color-pink);
     background-color: var(--color-ligth);
-    transition: color 1s;
-
 }
 
 .hero {
