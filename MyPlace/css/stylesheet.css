@@ -7,8 +7,24 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: var(--font-body);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a {
+    color:var(--color-ligth);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+a:hover {
+    color: var(--color-pink)
 }
 
 .container{
@@ -21,16 +37,8 @@
     background-position: 50%;
 }
 
-.header-info {
-    color: var(--color-dark);
-    font-weight: 600;
-    font-size: 20px;
-
-}
-
 .container h1{
     color: var(--color-ligth);
-    font-size: 55px;
 }
 
 .header-page{
@@ -39,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
 .header-menu ul{
@@ -47,59 +55,62 @@
     gap: 20px;
 }
 
-ul,li{
-    list-style: none;
-}
-
-h2 {
-    color: var(--color-ligth);
-    font-weight: 600;
-    font-size: 72px;
-}
-
-h3 {
-    color: var(--color-ligth);
-    font-weight: 600;
-    font-size: 45px;
-
-
-}
-
-ul a{
-    color:var(--color-ligth);
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color .5s;
-}
-
-ul a:hover {
-    color: var(--color-pink)
-}
-
-section a {
-    color: var(--color-ligth);
-    background-color: var(--color-pink);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 25px;
-    border-radius: 40px;
-    padding : 20px 45px;
-    transition: color .5s; 
-}
-
-section a:hover {
-    color: var(--color-pink);
-    background-color: var(--color-ligth);
+.logo-bg {
+background-color: var(--color-pink);
+padding: 3px;
+border-radius: 70px 70px 7px 70px;
 }
 
 .hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: var(--color-ligth);
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 55px;
-    margin-top: 215px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;  
 }
+
+.hero h2 {
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+.hero h3 {
+    font-size: clamp(18px, 4vw, 30px);
+}
+
+.btn {
+border: 3px solid var(--color-pink) ;
+background-color: var(--color-pink);
+padding: 5px 30px;
+border-radius: 70px;
+text-decoration: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.cards {
+    border: 1px solid var(--color-pink);
+    width: 90%;
+    height: 100vh;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cards h3 {
+    margin: 40px 0;
+}
+
+
+
+
+
+
+
+
 
 
 
