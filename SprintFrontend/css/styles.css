@@ -1,0 +1,69 @@
+:root {
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+.container {
+    font-family: sans-serif;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 10px;
+
+    .main-card {
+        width: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+
+    .cards-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 10px;
+
+    
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+            i {
+                font-size: 35px;
+                padding: 15px;
+            }
+        }
+    
+}
