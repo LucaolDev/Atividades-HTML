@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-body);
+    text-decoration: none;
 }
 
 .container {
@@ -39,12 +40,23 @@
     .cards-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        /* gap: 20px; */
 
         img {
             width: 80%;
             height: 80%;
         }
+    }
+}
+.description{
+    margin: 6vh 10px;
+
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
@@ -53,17 +65,42 @@
     justify-content: space-between;
     margin: 2vh 10px;
 
-    
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
 
 
-            i {
-                font-size: 35px;
-                padding: 15px;
-            }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        i {
+            font-size: 35px;
+            padding: 15px;
         }
-    
+    }
+
+    .box {
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 40px 80px; 
+        display: grid;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            
+        }
+
+        a{
+            font-size: 20px;
+            font-weight: 800;
+            padding: 12px;
+            background-color: #d8d8d8;
+            color: black;
+            border-radius: 8px;
+            
+    }
+}
 }
