@@ -98,7 +98,7 @@
     .box {
         border: 2px solid black;
         border-radius: 8px;
-        padding: 4vh 4;
+        padding: 4vh 4vw;
         display: grid;
         align-items: center;
         flex-direction: column;
