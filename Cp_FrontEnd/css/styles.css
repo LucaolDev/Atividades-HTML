@@ -1,0 +1,127 @@
+:root {
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header-page {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300
+}
+
+.hero-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4vh auto;
+    transition: .9s;
+    width: 90vw;
+    height: 75vh;
+
+    img {
+        width: 45vw;
+        height: 70vh;
+        transition: .6s;
+    }
+
+    .card-listL {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            padding: 10px 0;
+            width: 20vw;
+            height: 36vh;
+        }
+
+    }
+
+    .card-listR {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            padding: 10px 0;
+            width: 20vw;
+            height: 36vh;
+        }
+    }
+
+    img:hover {
+        filter: brightness(0.8);
+
+
+    }
+}
+
+.description {
+    margin: 6vh 1vw;
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh auto;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        i {
+            font-size: 40px;
+            padding: 15px;
+        }
+    }
+
+    .box {
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 4vh 4;
+        display: grid;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 800;
+            padding: 12px;
+            background-color: #f10d6c;
+            color: black;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            filter: brightness(0.8);
+        }
+    }
+
+}
