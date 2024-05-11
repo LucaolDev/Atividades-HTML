@@ -94,6 +94,23 @@ a:hover {
     background-color: transparent;
 }
 
+.arrow{
+    margin-left: 3px;
+    animation: arrow 1s ease-in-out infinite;
+}
+
+
+@keyframes arrow {
+0%,
+100%{
+    transform: translateY(0);
+}
+
+50%{
+    transform: translateY(-5px);
+}
+}
+
 .cards {
     width: 90%;
     height: 100vh;
@@ -145,12 +162,10 @@ a:hover {
                 text-wrap: balance;
             }
 
-            @media(max-width: 1024px){
-                .card-item{
-                    width: 80px;
-                }
+            @media(max-width: 1024px) {
+                 width: 80%;
+
             }
         }
     }
 }
-
