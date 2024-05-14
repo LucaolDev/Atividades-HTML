@@ -1,5 +1,8 @@
 :root {
     --font-body: "Poppins", sans-serif;
+    --star-color:#ffd43b;
+    --button-color:#f10d6c;
+    --black-color:#000000;
 }
 
 * {
@@ -20,7 +23,7 @@
         font-weight: 300;
 
         i {
-            color: #FFD43B;
+            color: var(--star-color);
         }
     }
 
@@ -32,9 +35,14 @@
         width: 90vw;
         height: 75vh;
 
+        @media (width <= 1024px) {
+			flex-direction: column;
+			height:auto;
+		}
+
         img {
             border-radius: 10px;
-            width: 40vw;
+            width: 45vw;
             height: 72vh;
             transition: .6s;
         }
@@ -50,8 +58,6 @@
             }
 
             .card-item {
-                width: 100%;
-                height: 100%;
                 margin: 5px;
             }
 
@@ -64,7 +70,6 @@
     }
 
     .description {
-        margin: 6vh 1vw;
 
         h2 {
             font-size: 24px;
@@ -79,7 +84,7 @@
     .offers {
         display: flex;
         justify-content: space-between;
-        margin: 2vh auto;
+        margin: 5vh 0;
 
         ul {
             display: grid;
@@ -92,13 +97,14 @@
         }
 
         .box {
-            border: 2px solid black;
+            border: 2px solid var(--black-color);
             border-radius: 8px;
             padding: 4vh 4vw;
             display: grid;
             align-items: center;
             flex-direction: column;
             text-align: center;
+            margin: 1vh 0;
 
             h2 {
                 font-size: 30px;
@@ -110,8 +116,8 @@
                 font-size: 20px;
                 font-weight: 800;
                 padding: 12px;
-                background-color: #f10d6c;
-                color: black;
+                background-color: var(--button-color);
+                color: var(--black-color);
                 border-radius: 8px;
             }
 
