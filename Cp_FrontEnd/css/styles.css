@@ -33,7 +33,14 @@
         align-items: center;
         margin: 4vh auto;
         width: 90vw;
-        height: 75vh;
+        height: auto;
+
+        .main-card{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
 
         @media (width <= 1024px) {
 			flex-direction: column;
@@ -51,6 +58,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 0 5px;
+            width: 100%;
 
             img {
                 width: 22vw;
@@ -59,8 +67,10 @@
 
             .card-item {
                 margin: 5px;
+                img{
+                    width: 100%;
+                }
             }
-
         }
 
         img:hover {
