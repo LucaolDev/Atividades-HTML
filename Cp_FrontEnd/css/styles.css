@@ -1,8 +1,8 @@
 :root {
     --font-body: "Poppins", sans-serif;
-    --star-color:#ffd43b;
-    --button-color:#f10d6c;
-    --black-color:#000000;
+    --star-color: #ffd43b;
+    --button-color: #f10d6c;
+    --black-color: #000000;
 }
 
 * {
@@ -11,130 +11,125 @@
     box-sizing: border-box;
     font-family: var(--font-body);
     text-decoration: none;
+}
 
-    .container {
-        width: 90%;
-        margin: 20px auto;
+.container {
+    width: 90%;
+    margin: 6vh auto;
+}
+
+.header-page {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+
+    i {
+        color: var(--star-color);
+    }
+}
+
+.hero-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4vh auto;
+    width: 90vw;
+    height: auto;
+
+    img {
+        border-radius: 10px;
+        transition: 0.6s;
     }
 
-    .header-page {
-        display: flex;
-        flex-direction: column;
-        font-weight: 300;
-
-        i {
-            color: var(--star-color);
+    .main-card {
+        width: 100%;
+        img {
+            width: 98%;
+            height: 72.5vh;
         }
     }
 
-    .hero-page {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 4vh auto;
-        width: 90vw;
+    @media (width <= 1024px) {
+        flex-direction: column;
         height: auto;
+    }
 
-        .main-card{
-            width: 100%;
-            img{
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 8px;
+        width: 100%;
+
+        img {
+            width: 22vw;
+            height: 35vh;
+        }
+
+        .card-item {
+            margin: 5px;
+            img {
                 width: 100%;
             }
         }
-
-        @media (width <= 1024px) {
-			flex-direction: column;
-			height:auto;
-		}
-
-        img {
-            border-radius: 10px;
-            width: 45vw;
-            height: 72vh;
-            transition: .6s;
-        }
-
-        .card-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0 5px;
-            width: 100%;
-
-            img {
-                width: 22vw;
-                height: 35vh;
-            }
-
-            .card-item {
-                margin: 5px;
-                img{
-                    width: 100%;
-                }
-            }
-        }
-
-        img:hover {
-            filter: brightness(0.8);
-        }
-
     }
 
-    .description {
+    img:hover {
+        filter: brightness(0.8);
+    }
+}
+
+.description {
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between; 
+    margin: 5vh 0;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        i {
+            font-size: 40px;
+            padding: 15px;
+        }
+    }
+
+    .box {
+        border: 2px solid var(--black-color);
+        border-radius: 8px;
+        padding: 4vh 4vw;
+        display: grid;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1vh 0;
 
         h2 {
-            font-size: 24px;
+            font-size: 30px;
+            font-weight: 600;
         }
 
-        p {
+        a {
             font-size: 20px;
-            font-weight: 500;
-        }
-    }
-
-    .offers {
-        display: flex;
-        justify-content: space-between;
-        margin: 5vh 0;
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-
-            i {
-                font-size: 40px;
-                padding: 15px;
-            }
-        }
-
-        .box {
-            border: 2px solid var(--black-color);
+            font-weight: 800;
+            padding: 12px;
+            background-color: var(--button-color);
+            color: var(--black-color);
             border-radius: 8px;
-            padding: 4vh 4vw;
-            display: grid;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            margin: 1vh 0;
-
-            h2 {
-                font-size: 30px;
-                font-weight: 600;
-
-            }
-
-            a {
-                font-size: 20px;
-                font-weight: 800;
-                padding: 12px;
-                background-color: var(--button-color);
-                color: var(--black-color);
-                border-radius: 8px;
-            }
-
-            a:hover {
-                filter: brightness(0.8);
-            }
         }
 
+        a:hover {
+            filter: brightness(0.8);
+        }
     }
 }
