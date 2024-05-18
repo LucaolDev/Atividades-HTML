@@ -1,0 +1,40 @@
+@font-face{
+    font-family:catamaram ;
+    src: url(../fonts/static/Catamaran-Regular.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: catamaram;
+}
+
+h2{
+font-size: 4vw;
+margin: 20px 80px;
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse:collapse ;
+}
+
+thead tr{
+    background-color: blue;
+    color: white;
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid blue;
+    width: 25%;
+}
+
+tbody tr:hover{
+    background-color: #999;
+}
+
